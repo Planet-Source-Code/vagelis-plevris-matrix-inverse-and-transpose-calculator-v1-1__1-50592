@@ -1,0 +1,16 @@
+Matrix Inverse and Transpose Calculator v1.10
+---------------------------------------------
+
+This is a program that calculates the Inverse of a Rectangular Matrix [A] (Dimensions N x N) using the Gauss elimination method, the product [A]*[A-1] for verification purposes (must be always equal to Singular Matrix [I]) and also the transpose of Matrix [A]. The interface is limited to 10x10 dimensions, but the solver itself can be used to calculate the Inverse of any Rectangular Matrix, provided the determinant of it is non-zero.
+
+Version History:
+----------------
+v1.10:	Fixed a bug in the Matrix Inverse calculation routine (which occured only in some special cases), where line k is changed with line_1:
+	LINE from version v1.00:
+		For m = k To System_DIM
+	should be:
+		For m = k To System_DIM * 2
+
+
+Written by Vagelis Plevris, Greece
+mail to: vplevris@tee.gr
